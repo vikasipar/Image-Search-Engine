@@ -71,6 +71,7 @@ input, button, i{
     columns: 5 340px;
 }
 .images .cards{
+    cursor: pointer;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -92,12 +93,10 @@ input, button, i{
 .images .cards:hover .details{
     bottom: 0;
 }
-/* .cards .details  */
 .photographer{
     display: flex;
     color: #fff;
 }
-/* .details  */
 .photographer i{
     font-size: 1.4rem;
     margin-right: 10px;
@@ -121,7 +120,11 @@ input, button, i{
     cursor: pointer;
     font-size: 1.2rem;
     padding: 12px 27px;
-    background: #8a6cff;
+    background: #2d758a;
+}
+.gallery .load-more.disabled{
+    opacity: 0.6;
+    pointer-events: none;
 }
 
 .lightbox{
@@ -131,6 +134,9 @@ input, button, i{
     height: 100%;
     display: none;
     background: rgba(0,0,0,0.65);
+}
+.lightbox.show{
+    display: block;
 }
 .lightbox .wrapper{
     position:absolute;
@@ -158,6 +164,7 @@ header .photographer span{
     font-size: 1.2rem;
     margin-left: 10px;
     align-items: center;
+    color: #073020;
 }
 header .buttons i{
     width: 40px;
@@ -165,14 +172,14 @@ header .buttons i{
     color: #fff;
     text-align: center;
     line-height: 40px;
-    background: #8a6cff;
+    background: #2d758a;
     font-size: 1.2rem;
     display: inline-block;
     cursor: pointer;
 }
 .buttons i:last-child{
     margin-left: 10px;
-    background: #6c757d;
+    background: #d54354;
 }
 .preview-img{
     display: flex;
